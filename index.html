@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test menu</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
   </head>
   <body>
     <!-- https://emmet.io/ -->
     <!-- header>h1{Test de menu} -->
     <header>
-      <button aria-controls="mainNav">menu</button>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"> menu </button>
       <h1>Test de menu</h1>
-      <nav id="mainNav" x-show=""menuIsOpen">
+      <nav id="mainNav" x-show="menuIsOpen" x-transition>
         <ul>
-          <li href="#">item 1</li>
-          <li href="#">item 2</li>
-          <li href="#">item 3</li>
+          <li><a href="#">item 1</a></li>
+          <li><a href="#">item 2</a></li>
+          <li><a href="#">item 3</a></li>
         </ul>
       </nav>
-      <script defer src=""https://unpkg.com/alpinejs"></script>
     </header>
     <!-- h2>lorem2^p>lorem -->
     <h2>Lorem, ipsum.</h2>
