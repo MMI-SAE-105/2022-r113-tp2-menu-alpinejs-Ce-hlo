@@ -34,34 +34,24 @@
     <!-- header>h1{Test de menu} -->
     <header>
       <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class=""header__menuBtn"> menu </button>
-      <h1>Accueil</h1>
+      <h1>Chat1</h1>
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
         <ul>
-          <li><a href="/cats/index.html">chats</a>
+          <li><a href="./index.html">chats</a>
                <ul>
-                <li><a href ="/cats/chat-1.html">chat1</a></li>
-                <li><a href="/cats/chat-2.html">chat2</a></li>
+                <li><a href ="./chat-1.html">chat1</a></li>
+                <li><a href="./chat-2.html">chat2</a></li>
                </ul> 
           </li>
-          <li><a href="./dogs/index.html">Les chiens</a>
+          <li><a href="../dogs/index.html">Les chiens</a>
                <ul>
-                <li><a href="/dogs/dogs-1.html">dogs1</a></li>
-                <li><a href="/dogs/dogs-2.html">dogs2</a></li>
+                <li><a href="../dogs/dogs-1.html">dogs1</a></li>
+                <li><a href="../dogs/dogs-2.html">dogs2</a></li>
                </ul>
-          
-          
-          
           </li>
         </ul>
       </nav>
     </header>
-    <!-- h2>lorem2^p>lorem -->
-    <h2>Lorem, ipsum.</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-      mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
-      nemo aliquid pariatur quam voluptates animi laudantium, aperiam
-      consectetur nobis enim.
-    </p>
+    <img class="media media--fullwidth" src="../cats/scottish fold.jpg">
   </body>
 </html>
